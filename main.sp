@@ -15,14 +15,7 @@ public Plugin myinfo = {
 public void OnPluginStart() {
 	PrintToServer("LennyDB loaded... ( ͡° ͜ʖ ͡°)");
 
-	RegConsoleCmd("lenny", PrintLenny, "( ͡° ͜ʖ ͡°)");
-	RegConsoleCmd("mk_menu", MkMenu, "( ͡° ͜ʖ ͡°)");
-}
-
-public Action PrintLenny(int client, int args) {
-	PrintToChat(client, "( ͡° ͜ʖ ͡°)");
-
-	return Plugin_Handled;
+	RegConsoleCmd("lenny", MkMenu, "( ͡° ͜ʖ ͡°)");
 }
 
 public Action MkMenu(int client, int args) {
