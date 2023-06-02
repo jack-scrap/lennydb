@@ -15,7 +15,7 @@ public Plugin myinfo = {
 public void OnPluginStart() {
 	PrintToServer("LennyDB loaded... ( ͡° ͜ʖ ͡°)");
 
-	RegConsoleCmd("sm_test", Command_Test, "asdf");
+	RegConsoleCmd("sm_test", Command_Test, "( ͡° ͜ʖ ͡°)");
 }
 
 public Action Command_Test(int client, int args) {
