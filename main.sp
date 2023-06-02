@@ -5,9 +5,9 @@
 #pragma newdecls required
 
 public Plugin myinfo = {
-	name = "asdf",
-	author = "asdf",
-	description = "asdf",
+	name = "LennyDB",
+	author = "JackHasaKeyboard",
+	description = "( ͡° ͜ʖ ͡°)",
 	version = "1.0",
 	url = ""
 };
