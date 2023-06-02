@@ -20,4 +20,6 @@ public void OnPluginStart() {
 
 public Action PrintLenny(int client, int args) {
 	PrintToChat(client, "( ͡° ͜ʖ ͡°)");
+
+	return Plugin_Handled;
 }
