@@ -15,7 +15,7 @@ public Plugin myinfo = {
 public void OnPluginStart() {
 	PrintToServer("asdf");
 
-	RegConsoleCmd("sm_test", asdf, "asdf");
+	RegConsoleCmd("sm_test", Command_Test, "asdf");
 }
 
 public Action Command_Test(int client, int args) {
