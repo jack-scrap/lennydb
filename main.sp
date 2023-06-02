@@ -34,8 +34,6 @@ public Action MkMenu(int client, int args) {
 	menu.AddItem("bear", "ʕ◉ᴥ◉ʔ");
 	menu.AddItem("dolla", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 
-	menu.Display(client, 3);
-
 	return Plugin_Handled;
 }
 
