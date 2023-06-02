@@ -16,6 +16,10 @@ $(EXEC): $(SRC)
 install:
 	cp $(EXEC) $(SVDIR)/plugins
 
+.PHONY: uninstall
+uninstall:
+	rm $(SVDIR)/plugins/$(EXEC)
+
 .PHONY: clean
 clean:
 	rm $(EXEC)
