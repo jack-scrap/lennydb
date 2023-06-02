@@ -23,16 +23,16 @@ public Action MkMenu(int client, int args) {
 
 	menu.SetTitle("( ͡° ͜ʖ ͡°)");
 
-	menu.AddItem("( ͡° ͜ʖ ͡°)", "( ͡° ͜ʖ ͡°)");
-	menu.AddItem("( ͡° ل͜ ͡°)", "( ͡° ل͜ ͡°)");
-	menu.AddItem("(˵ ͡° ͜ʖ ͡°˵)", "(˵ ͡° ͜ʖ ͡°˵)");
-	menu.AddItem("( ͠° ͟ʖ ͠°)", "( ͠° ͟ʖ ͠°)");
-	menu.AddItem("( ͡ʘ ͜ʖ ͡ʘ)", "( ͡ʘ ͜ʖ ͡ʘ)");
-	menu.AddItem("ᕕ( ͡° ͜ʖ ͡°)ᕗ", "ᕕ( ͡° ͜ʖ ͡°)ᕗ");
-	menu.AddItem("(☞ ͡° ͜ʖ ͡°)☞", "(☞ ͡° ͜ʖ ͡°)☞");
-	menu.AddItem("( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)", "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
-	menu.AddItem("ʕ◉ᴥ◉ʔ", "ʕ◉ᴥ◉ʔ");
-	menu.AddItem("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
+	menu.AddItem("main", "( ͡° ͜ʖ ͡°)");
+	menu.AddItem("nose", "( ͡° ل͜ ͡°)");
+	menu.AddItem("blush", "(˵ ͡° ͜ʖ ͡°˵)");
+	menu.AddItem("perturbed", "( ͠° ͟ʖ ͠°)");
+	menu.AddItem("wide_eyed", "( ͡ʘ ͜ʖ ͡ʘ)");
+	menu.AddItem("stronk", "ᕕ( ͡° ͜ʖ ͡°)ᕗ");
+	menu.AddItem("point", "(☞ ͡° ͜ʖ ͡°)☞");
+	menu.AddItem("gaggle", "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
+	menu.AddItem("bear", "ʕ◉ᴥ◉ʔ");
+	menu.AddItem("dolla", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 
 	menu.Display(client, 3);
 
@@ -45,43 +45,43 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 			char item[32];
 			menu.GetItem(param1, item, sizeof (item));
 
-			if (StrEqual(item, "( ͡° ͜ʖ ͡°)")) {
+			if (StrEqual(item, "main")) {
 				PrintToServer("( ͡° ͜ʖ ͡°)");
 			}
 
-			if (StrEqual(item, "( ͡° ل͜ ͡°)")) {
+			if (StrEqual(item, "nose")) {
 				PrintToServer("( ͡° ل͜ ͡°)");
 			}
 
-			if (StrEqual(item, "(˵ ͡° ͜ʖ ͡°˵)")) {
+			if (StrEqual(item, "blush")) {
 				PrintToServer("(˵ ͡° ͜ʖ ͡°˵)");
 			}
 
-			if (StrEqual(item, "( ͠° ͟ʖ ͠°)")) {
+			if (StrEqual(item, "perturbed")) {
 				PrintToServer("( ͠° ͟ʖ ͠°)");
 			}
 
-			if (StrEqual(item, "( ͡ʘ ͜ʖ ͡ʘ)")) {
+			if (StrEqual(item, "wide_eyed")) {
 				PrintToServer("( ͡ʘ ͜ʖ ͡ʘ)");
 			}
 
-			if (StrEqual(item, "ᕕ( ͡° ͜ʖ ͡°)ᕗ")) {
+			if (StrEqual(item, "stronk")) {
 				PrintToServer("ᕕ( ͡° ͜ʖ ͡°)ᕗ");
 			}
 
-			if (StrEqual(item, "(☞ ͡° ͜ʖ ͡°)☞")) {
+			if (StrEqual(item, "point")) {
 				PrintToServer("(☞ ͡° ͜ʖ ͡°)☞");
 			}
 
-			if (StrEqual(item, "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)")) {
+			if (StrEqual(item, "gaggle")) {
 				PrintToServer("( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
 			}
 
-			if (StrEqual(item, "ʕ◉ᴥ◉ʔ")) {
+			if (StrEqual(item, "bear")) {
 				PrintToServer("ʕ◉ᴥ◉ʔ");
 			}
 
-			if (StrEqual(item, "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")) {
+			if (StrEqual(item, "dolla")) {
 				PrintToServer("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 			}
 		}
