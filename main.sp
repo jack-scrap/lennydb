@@ -16,7 +16,7 @@ public void OnPluginStart() {
 	PrintToServer("LennyDB loaded... ( ͡° ͜ʖ ͡°)");
 
 	RegConsoleCmd("lenny", PrintLenny, "( ͡° ͜ʖ ͡°)");
-	RegConsoleCmd("mk_menu", MkMenu, "asdf");
+	RegConsoleCmd("mk_menu", MkMenu, "( ͡° ͜ʖ ͡°)");
 }
 
 public Action PrintLenny(int client, int args) {
@@ -28,10 +28,10 @@ public Action PrintLenny(int client, int args) {
 public Action MkMenu(int client, int args) {
 	Menu menu = new Menu(MenuCallback);
 
-	menu.SetTitle("asdf");
+	menu.SetTitle("( ͡° ͜ʖ ͡°)");
 
-	menu.AddItem("asdf", "asdf");
-	menu.AddItem("hjkl", "hjkl");
+	menu.AddItem("( ͡° ͜ʖ ͡°)", "( ͡° ͜ʖ ͡°)");
+	menu.AddItem("( ͡° ل͜ ͡°)", "( ͡° ل͜ ͡°)");
 
 	menu.Display(client, 3);
 
@@ -44,12 +44,12 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 			char item[32];
 			menu.GetItem(param1, item, sizeof (item));
 
-			if (StrEqual(item, "asdf")) {
-				PrintToServer("asdf");
+			if (StrEqual(item, "( ͡° ͜ʖ ͡°)")) {
+				PrintToServer("( ͡° ͜ʖ ͡°)");
 			}
 
-			if (StrEqual(item, "hjkl")) {
-				PrintToServer("hjkl");
+			if (StrEqual(item, "( ͡° ل͜ ͡°)")) {
+				PrintToServer("( ͡° ل͜ ͡°)");
 			}
 		}
 
