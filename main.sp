@@ -32,6 +32,14 @@ public Action MkMenu(int client, int args) {
 
 	menu.AddItem("( ͡° ͜ʖ ͡°)", "( ͡° ͜ʖ ͡°)");
 	menu.AddItem("( ͡° ل͜ ͡°)", "( ͡° ل͜ ͡°)");
+	menu.AddItem("(˵ ͡° ͜ʖ ͡°˵)", "(˵ ͡° ͜ʖ ͡°˵)");
+	menu.AddItem("( ͠° ͟ʖ ͠°)", "( ͠° ͟ʖ ͠°)");
+	menu.AddItem("( ͡ʘ ͜ʖ ͡ʘ)", "( ͡ʘ ͜ʖ ͡ʘ)");
+	menu.AddItem("ᕕ( ͡° ͜ʖ ͡°)ᕗ", "ᕕ( ͡° ͜ʖ ͡°)ᕗ");
+	menu.AddItem("(☞ ͡° ͜ʖ ͡°)☞", "(☞ ͡° ͜ʖ ͡°)☞");
+	menu.AddItem("( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)", "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
+	menu.AddItem("ʕ◉ᴥ◉ʔ", "ʕ◉ᴥ◉ʔ");
+	menu.AddItem("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 
 	menu.Display(client, 3);
 
@@ -50,6 +58,38 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 
 			if (StrEqual(item, "( ͡° ل͜ ͡°)")) {
 				PrintToServer("( ͡° ل͜ ͡°)");
+			}
+
+			if (StrEqual(item, "(˵ ͡° ͜ʖ ͡°˵)")) {
+				PrintToServer("(˵ ͡° ͜ʖ ͡°˵)");
+			}
+
+			if (StrEqual(item, "( ͠° ͟ʖ ͠°)")) {
+				PrintToServer("( ͠° ͟ʖ ͠°)");
+			}
+
+			if (StrEqual(item, "( ͡ʘ ͜ʖ ͡ʘ)")) {
+				PrintToServer("( ͡ʘ ͜ʖ ͡ʘ)");
+			}
+
+			if (StrEqual(item, "ᕕ( ͡° ͜ʖ ͡°)ᕗ")) {
+				PrintToServer("ᕕ( ͡° ͜ʖ ͡°)ᕗ");
+			}
+
+			if (StrEqual(item, "(☞ ͡° ͜ʖ ͡°)☞")) {
+				PrintToServer("(☞ ͡° ͜ʖ ͡°)☞");
+			}
+
+			if (StrEqual(item, "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)")) {
+				PrintToServer("( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
+			}
+
+			if (StrEqual(item, "ʕ◉ᴥ◉ʔ")) {
+				PrintToServer("ʕ◉ᴥ◉ʔ");
+			}
+
+			if (StrEqual(item, "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]")) {
+				PrintToServer("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 			}
 		}
 
