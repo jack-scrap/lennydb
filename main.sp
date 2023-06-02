@@ -19,5 +19,5 @@ public void OnPluginStart() {
 }
 
 public Action Command_Test(int client, int args) {
-	PrintToChat(client, "asdf");
+	PrintToChat(client, "( ͡° ͜ʖ ͡°)");
 }
