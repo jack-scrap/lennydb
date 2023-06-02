@@ -1,4 +1,6 @@
-SPC=~/.steam/steamcmd/tf2/tf/addons/sourcemod/scripting/spcomp
+SVDIR=~/.steam/steamcmd/tf2/tf/addons/sourcemod
+
+SPC=$(SVDIR)/scripting/spcomp
 
 EXEC=lennydb.smx
 
@@ -9,6 +11,10 @@ all: $(EXEC)
 
 $(EXEC): $(SRC)
 	$(SPC) $< -o $@
+
+.PHONY: install
+install:
+	cp $(EXEC) $(SVDIR)/plugins
 
 .PHONY: clean
 clean:
