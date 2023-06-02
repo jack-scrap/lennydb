@@ -13,7 +13,7 @@ public Plugin myinfo = {
 };
 
 public void OnPluginStart() {
-	PrintToServer("asdf");
+	PrintToServer("LennyDB loaded... ( ͡° ͜ʖ ͡°)");
 
 	RegConsoleCmd("sm_test", Command_Test, "asdf");
 }
