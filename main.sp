@@ -15,9 +15,9 @@ public Plugin myinfo = {
 public void OnPluginStart() {
 	PrintToServer("LennyDB loaded... ( ͡° ͜ʖ ͡°)");
 
-	RegConsoleCmd("lenny", Command_Test, "( ͡° ͜ʖ ͡°)");
+	RegConsoleCmd("lenny", PrintLenny, "( ͡° ͜ʖ ͡°)");
 }
 
-public Action Command_Test(int client, int args) {
+public Action PrintLenny(int client, int args) {
 	PrintToChat(client, "( ͡° ͜ʖ ͡°)");
 }
