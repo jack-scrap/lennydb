@@ -33,6 +33,7 @@ public Action MkMenu(int client, int args) {
 	menu.AddItem("gaggle", "( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)");
 	menu.AddItem("bear", "ʕ◉ᴥ◉ʔ");
 	menu.AddItem("dolla", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
+	menu.AddItem("idk", "ʕ ͡oム͜͜ ⊙ヾ )>");
 
 	return Plugin_Handled;
 }
@@ -81,6 +82,10 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 
 			if (StrEqual(item, "dolla")) {
 				PrintToServer("[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
+			}
+
+			if (StrEqual(item, "dolla")) {
+				PrintToServer("ʕ ͡oム͜͜ ⊙ )>");
 			}
 		}
 
