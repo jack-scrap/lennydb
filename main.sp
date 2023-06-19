@@ -34,6 +34,14 @@ public Action MkMenu(int client, int args) {
 	menu.AddItem("bear", "ʕ◉ᴥ◉ʔ");
 	menu.AddItem("dolla", "[̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]");
 	menu.AddItem("idk", "ʕ ͡oム͜͜ ⊙ヾ )>");
+	menu.AddItem("strapped", "(ง ͡° ͜ʖ ͡°)=/̵͇̿̿/'̿'̿̿̿ ̿ ̿̿");
+	menu.AddItem("square", "[ ͡° ͜ʖ ͡°]");
+	menu.AddItem("fu", "( ͡°╭ʖ╮ ͡° )");
+	menu.AddItem("eyepatch", "(▀ ͜ʖ ͡°)");
+	menu.AddItem("magic", "(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * ･ ｡ﾟ,");
+	menu.AddItem("wide", "( ͡°    ͜ʖ    ͡°)");
+	menu.AddItem("wider", "( ͡°                    ͜ʖ.                       ͡°)");
+	menu.AddItem("shades", "(⌐▀͡ ̯ʖ▀)");
 
 	return Plugin_Handled;
 }
@@ -86,6 +94,38 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 
 			if (StrEqual(item, "dolla")) {
 				PrintToServer("ʕ ͡oム͜͜ ⊙ )>");
+			}
+
+			if (StrEqual("strapped")) {
+				PrintToServer("(ง ͡° ͜ʖ ͡°)=/̵͇̿̿/'̿'̿̿̿ ̿ ̿̿");
+			}
+
+			if (StrEqual("square")) {
+				PrintToServer("[ ͡° ͜ʖ ͡°]");
+			}
+
+			if (StrEqual("fu")) {
+				PrintToServer("( ͡°╭ʖ╮ ͡° )");
+			}
+
+			if (StrEqual("eyepatch")) {
+				PrintToServer("(▀ ͜ʖ ͡°)");
+			}
+
+			if (StrEqual("magic")) {
+				PrintToServer("(∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ. * ･ ｡ﾟ,");
+			}
+
+			if (StrEqual("wide")) {
+				PrintToServer("( ͡°    ͜ʖ    ͡°)");
+			}
+
+			if (StrEqual("wider")) {
+				PrintToServer("( ͡°                    ͜ʖ.                       ͡°)");
+			}
+
+			if (StrEqual("shades")) {
+				PrintToServer("(⌐▀͡ ̯ʖ▀)");
 			}
 		}
 
