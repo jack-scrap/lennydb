@@ -42,6 +42,7 @@ public Action MkMenu(int client, int args) {
 	menu.AddItem("wide", "( ͡°    ͜ʖ    ͡°)");
 	menu.AddItem("wider", "( ͡°                    ͜ʖ.                       ͡°)");
 	menu.AddItem("shades", "(⌐▀͡ ̯ʖ▀)");
+	menu.AddItem("unibrow", "(° ͡ ͜ ͡ʖ ͡ °)");
 
 	return Plugin_Handled;
 }
@@ -126,6 +127,10 @@ public int MenuCallback(Menu menu, MenuAction action, int param0, int param1) {
 
 			if (StrEqual("shades")) {
 				PrintToServer("(⌐▀͡ ̯ʖ▀)");
+			}
+
+			if (StrEqual("unibrow")) {
+				PrintToServer("(° ͡ ͜ ͡ʖ ͡ °)");
 			}
 		}
 
